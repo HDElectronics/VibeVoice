@@ -1164,7 +1164,7 @@ def main():
     # Create interface
     interface = create_demo_interface(demo_instance)
     
-    print(f"🚀 Launching demo on port {args.port}")
+    print(f"🚀 Launching demo on port 8080")
     print(f"📁 Model path: {args.model_path}")
     print(f"🎭 Available voices: {len(demo_instance.available_voices)}")
     print(f"🔴 Streaming mode: ENABLED")
