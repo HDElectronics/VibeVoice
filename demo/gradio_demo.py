@@ -1177,10 +1177,10 @@ def main():
             default_concurrency_limit=1  # Process one request at a time
         ).launch(
             share=args.share,
-            # server_port=args.port,
-            server_name="0.0.0.0" if args.share else "127.0.0.1",
+            server_port=8080,
+            server_name="0.0.0.0",
             show_error=True,
-            show_api=False  # Hide API docs for cleaner interface
+            show_api=True
         )
     except KeyboardInterrupt:
         print("\n🛑 Shutting down gracefully...")
